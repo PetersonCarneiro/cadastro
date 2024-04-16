@@ -1,0 +1,6 @@
+CREATE TABLE users(
+    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    firstName TEXT NOT NULL,
+    lastName TEXT NOT NULL,
+    document TEXT UNIQUE NOT NULL
+);
