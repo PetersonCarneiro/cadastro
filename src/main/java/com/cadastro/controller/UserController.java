@@ -72,7 +72,7 @@ public class UserController {
             newUser.setActive(false);
             return ResponseEntity.noContent().build();
         }else{
-            return  ResponseEntity.noContent().build();
+            throw  new EntityNotFoundException();
         }
 
     }
